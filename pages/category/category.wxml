@@ -1,0 +1,65 @@
+<tb />
+<view class="s">
+  <!-- 左边 -->
+  <scroll-view scroll-y class="left">
+    <view  id="{{index===index1?'active':''}}" class="ss" wx:for="{{ffl}}" wx:key="index" bindtap="d" data-index="{{index}}">
+     {{item.cat_name}}
+    </view>
+  </scroll-view>
+  <!-- 左边 -->
+
+  <!-- 右边 -->
+  <scroll-view scroll-y class="rigth"  wx:if="{{index1==0}}">
+<block wx:for="{{b}}">
+  <view class="rrr">
+    <text>/</text>
+  {{item.cat_name}}
+  <text>/</text>
+
+</view>
+<view class="t" >
+  <view class="tt" wx:for="{{item.children}}" wx:for-item="item1" wx:key='index'>
+    <image src="{{item1.cat_icon}}" bindtap="t" data-item="{{item1}}">
+
+    </image>
+    <view class="pp">
+      {{item1.cat_name}}
+
+    </view>
+
+  </view>
+
+</view>
+</block>
+  </scroll-view>
+
+  <scroll-view scroll-y class="rigth"  wx:if="{{index1>0}}">
+<block wx:for="{{c}}" wx:key='index'>
+<view class="rrr">
+  <text>/</text>
+
+  {{item.cat_name}}
+  <text>/</text>
+
+</view>
+<view class="t" >
+  <view class="tt" wx:for="{{item.children}}" wx:for-item="item1" wx:key='index'>
+    <image src="{{item1.cat_icon}}" bindtap="t" data-item="{{item}}" >
+
+    </image>
+    <view class="pp">
+      {{item1.cat_name}}
+
+    </view>
+
+  </view>
+
+</view>
+</block>
+  </scroll-view>
+  <!-- 右边 -->
+
+
+
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-ko":"/compoents/home/fl1",
+    "w-lun":"/compoents/lunbo/lun",
+    "tb":"/compoents/tb/tbu"
+  }
+}

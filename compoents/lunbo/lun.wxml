@@ -1,0 +1,30 @@
+<!--compoents/lunbo/lun.wxml-->
+<view class="qq" wx:for="{{lc}}" wx:key='index'>
+  <view class="qqq">
+    <image src="{{item.floor_title.image_src}}"></image>
+  </view>
+  <view class="qqqq">
+    <view class="z">
+      <image src="{{item.product_list[0].image_src}}" alt="" />
+    </view>
+    <view class="zz">
+      <view class="zzz">
+      <image src="{{item.product_list[1].image_src}}" alt="" />
+
+      </view>
+      <view class="zzz">
+      <image src="{{item.product_list[2].image_src}}" alt="" />
+
+      </view>
+      <view class="zzz">
+      <image src="{{item.product_list[3].image_src}}" alt="" />
+
+      </view>
+      <view class="zzz">
+      <image src="{{item.product_list[4].image_src}}" alt="" />
+
+      </view>
+    </view>
+  </view>
+
+</view>

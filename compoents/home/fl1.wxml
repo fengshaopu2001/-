@@ -1,0 +1,6 @@
+<!--compoents/fl/fl1.wxml-->
+<view class="kk">
+ <view class="kkk" wx:for="{{fl}}" wx:key='index'>
+<image src="{{item.image_src}}"></image>
+ </view>
+</view>

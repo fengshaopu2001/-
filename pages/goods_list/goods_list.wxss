@@ -1,0 +1,62 @@
+/* pages/goods_list/goods_list.wxss */
+.s {
+  width: 100%;
+  height: 45px;
+  border: 1px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #fff;
+  display: flex;
+}
+
+.w {
+  width: 100%;
+  height: 130px;
+  border: 1px solid grey;
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+}
+
+.q {
+  width: 33%;
+  height: 100%;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.ww {
+  width: 40%;
+  height: 100%;
+
+}
+
+.www {
+  width: 78%;
+  height: 100%;
+
+}
+
+.d {
+  width: 100%;
+font-size: 15px;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.k{
+  color: red;
+  margin-top: 10px;
+}
+#active{
+color: red;
+border-bottom: 1px solid red;
+}

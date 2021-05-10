@@ -1,0 +1,6 @@
+<!--pages/goods_detail/goods_detail.wxml-->
+<swiper autoplay="true" interval="2000" circular="true" indicator-dots="true">
+  <swiper-item wx:for="{{list}}" wx:key='index'>
+    <image src="{{item.pics_big}}"></image>
+  </swiper-item>
+</swiper>

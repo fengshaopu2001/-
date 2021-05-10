@@ -1,0 +1,13 @@
+/* compoents/fl/fl1.wxss */
+.kk{
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.kkk{
+  width: 23%;
+  height: 80%;
+}

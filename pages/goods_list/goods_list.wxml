@@ -1,0 +1,40 @@
+<!--pages/goods_list/goods_list.wxml-->
+<tb />
+<view class="s">
+  <view class="q" id="{{index===id?'active':''}}" wx:for="{{zh}}" wx:key='index' bindtap="u" data-index="{{index}}">
+    {{item.value}}
+  </view>
+</view>
+
+<view class="w" wx:for="{{list}}" wx:key='index' wx:if="{{id===0}}"  bindtap="hhh" data-item="{{item}}">
+  <view class="ww">
+    <image src="{{item.goods_big_logo}}"></image>
+  </view>
+
+  <view class="www">
+    <view class="d">
+      {{item.goods_name}}
+    </view>
+    <text class="k">￥{{item.goods_price}}</text>
+  </view>
+
+</view>
+
+<text wx:if="{{id==1}}">1</text>
+<text wx:if="{{id==2}}">2</text>
+
+
+<!-- 
+<view class="w" wx:for="{{list}}" wx:key='index'>
+  <view class="ww">
+    <image src="{{item.goods_big_logo}}"></image>
+  </view>
+
+  <view class="www">
+    <view class="d">
+      {{item.goods_name}}
+    </view>
+    <text class="k">￥{{item.goods_price}}</text>
+  </view>
+
+</view> -->

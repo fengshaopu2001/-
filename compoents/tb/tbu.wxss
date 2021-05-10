@@ -1,0 +1,22 @@
+/* compoents/tb/tbu.wxss */
+@import "/iconfont/icon.wxss";
+
+.s{
+  width: 100%;
+  height: 30px;
+  background: #d71345;
+}
+.input{
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#w{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

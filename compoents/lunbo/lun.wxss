@@ -1,0 +1,37 @@
+/* compoents/lunbo/lun.wxss */
+.qq{
+  width: 100%;
+  height: 190px;
+}
+.qqq{
+  width: 100%;
+  height: 40px;
+}
+.qqqq{
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+.z{
+  width: 120px;
+  height: 100%;
+}
+.zz{
+  width: 78%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.zzz{
+  width: 46%;
+  height: 49%;
+
+}
+image{
+  width: 100%;
+  height:100%;
+}
+
+

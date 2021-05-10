@@ -1,0 +1,4 @@
+<view class="s">
+ <!-- <input type="text" /> -->
+ <view class="input"><text id="w" class="iconfont icon-sousou">搜索</text> </view>
+</view>

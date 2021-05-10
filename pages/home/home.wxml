@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+<!-- 头部 -->
+<tb bindtap="a"></tb>
+<!-- 头部 -->
+
+<!-- 轮播 -->
+<swiper autoplay="true">
+  <swiper-item wx:for="{{img}}" wx:key='index'>
+      <image src="{{item.image_src}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 分类 -->
+<w-ko fl="{{fl}}" bindtap="tt"></w-ko>
+<!-- 分类 -->
+
+<!-- 楼层 -->
+<w-lun lc="{{lc}}"> </w-lun>
+<!-- 楼层 -->
