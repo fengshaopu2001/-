@@ -1,17 +1,43 @@
 // pages/order/order.js
+var time=require('../../utils/util.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    list: ["全部", "待付款", "代发货", "退款/退货"],
+    index: 0,
+    index1: 0,
+    list1: [],
+    time1:{}
   },
-
+  d(e) {
+    console.log(e);
+    var index1 = e.currentTarget.dataset.index
+    console.log(index1);
+    this.setData({
+      index1: index1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var dd = wx.getStorageSync('zon')
+    console.log(dd);
+
+   var a= dd.map(v=>v.upd_time)
+var tim=0
+a.forEach((item)=>{
+  console.log(item);
+   tim=time.formatTimeTwo(item,'Y/M/D h:m:s')
+})
+    
+    this.setData({
+      list1: dd,
+      time1:tim
+    })
 
   },
 

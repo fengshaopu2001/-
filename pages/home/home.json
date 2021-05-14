@@ -3,5 +3,8 @@
     "w-ko":"/compoents/home/fl1",
     "w-lun":"/compoents/lunbo/lun",
     "tb":"/compoents/tb/tbu"
-  }
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
 }

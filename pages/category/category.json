@@ -1,5 +1,9 @@
 {
   "usingComponents": {
     "tb":"/compoents/tb/tbu"
-  }
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "分类",
+  "enablePullDownRefresh": true
+
 }

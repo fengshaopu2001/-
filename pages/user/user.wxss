@@ -1,1 +1,129 @@
 /* pages/user/user.wxss */
+.s {
+  width: 100%;
+  height: 150px;
+  background: rosybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.o{
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+.ss {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 131px;
+  left: 19px;
+  background: #fff;
+}
+
+.sss {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.q {
+  width: 25%;
+  height: 100%;
+  background: #fff;
+  
+}
+
+.r {
+  width: 100%;
+  height: 420px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.rr {
+  width: 95%;
+  height: 95%;
+}
+
+.e {
+  width: 100%;
+  height: 35px;
+  border: 1px solid gray;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.qq {
+  width: 100%;
+  height: 50%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sh {
+  width: 93%;
+  height: 35px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+
+.shh{
+  width: 93%;
+  height: 35px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+.shhh{
+  width: 93%;
+  height: 35px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+
+.vb{
+  width: 93%;
+  height: 35px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+image{
+  width: 60px;
+  height: 60px;
+}
+#qf{
+  color: red;
+}

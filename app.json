@@ -22,7 +22,6 @@
     "navigationBarTitleText": "黑马优选",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
-   
   },
   "tabBar": {
     "list": [

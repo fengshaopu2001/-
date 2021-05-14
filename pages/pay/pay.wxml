@@ -1,2 +1,47 @@
 <!--pages/pay/pay.wxml-->
-<text>pages/pay/pay.wxml</text>
+<view class="s">
+  <view class="ss">
+    收货人：{{tt.userName}}
+  </view>
+  <view>
+    地址:{{tt.all}}
+  </view>
+</view>
+
+<view class="q">
+  <text>购物车</text>
+</view>
+
+<view class="qq" wx:for="{{z}}">
+  <view class="t">
+    <view class="tt">
+      <image src="{{item.goods_big_logo}}"></image>
+    </view>
+    <view class="ttt">
+      <view class="y">
+        {{item.goods_name}}
+      </view>
+      <view class="yy">
+        <view class="z"> ￥{{item.goods_price}}</view>
+        <view>x{{item.num}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="d">
+  <view class="dd"></view>
+  <view class="ddd">
+    <view class="u">
+      <view class="uu">
+        合计：<text class="z">￥{{num}}</text>
+      </view>
+      <view class="uuu">
+        包含运费
+      </view>
+    </view>
+    <view class="pp">
+      <navigator bindtap="zhi">支付({{num1}})</navigator>
+    </view>
+  </view>
+</view>

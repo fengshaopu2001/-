@@ -1,2 +1,25 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view class="s">
+  <view class="ss" wx:for="{{list}}" id="{{index1===index?'article':''}}" bindtap="d" data-index="{{index}}">{{item}}
+  </view>
+</view>
+
+<view class="q">
+  <view class="qq" wx:for="{{list1}}">
+    <view class="qqq">
+
+      <text>订单编号</text>
+      <text>0</text>
+    </view>
+    <view class="qqq">
+      <text>订单价格</text>
+      <text class="red">￥{{item.goods_price}}</text>
+
+    </view>
+    <view class="qqq">
+      <text>订单日期</text>
+      <text>{{time1}}</text>
+
+    </view>
+  </view>
+</view>

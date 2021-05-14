@@ -4,5 +4,10 @@ module.exports={
    home3:'/home/floordata',
    fl:'/categories',
    f2:"/goods/search",
-   f3:"/goods/detail"
+   f3:"/goods/detail",
+   gwc:"/my/orders/create",
+   log:"/users/wxlogin",
+   dd:'/my/orders/create',
+   ss:'/goods/qsearch',
+   user:'/my/orders/all'
 }

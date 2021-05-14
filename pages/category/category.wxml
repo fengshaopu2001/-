@@ -1,4 +1,4 @@
-<tb />
+<tb bindtap="ddd" />
 <view class="s">
   <!-- 左边 -->
   <scroll-view scroll-y class="left">

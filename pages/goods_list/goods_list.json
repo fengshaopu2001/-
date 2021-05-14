@@ -2,5 +2,7 @@
   "usingComponents": {
     "tb":"/compoents/tb/tbu"
 
-  }
+  },
+  "navigationBarTitleText": "商品列表"
+
 }

@@ -1,11 +1,14 @@
 // pages/search/search.js
+var app = new getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    value: "",
+    list: [],
+    s: []
   },
 
   /**
@@ -14,7 +17,35 @@ Page({
   onLoad: function (options) {
 
   },
+  input() {
 
+    app.http.fg(this.data.value).then((res) => {
+      console.log(res);
+      var a = res.data.message
+      this.setData({
+        list: a
+      })
+    })
+  },
+  d(e) {
+    console.log(e);
+    var index = e.currentTarget.dataset.index
+    var id = this.data.list[index].goods_id
+    var arr = wx.getStorageSync('arr') || []
+
+    arr.push(this.data.list[index].goods_name)
+    wx.setStorageSync('arr', arr)
+
+    wx.navigateTo({
+      url: '/pages/goods_detail/goods_detail?id=' + id,
+    })
+  },
+
+  qx() {
+    wx.navigateBack({ //返回上一页
+      delta: 1,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

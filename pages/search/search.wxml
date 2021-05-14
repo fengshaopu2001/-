@@ -1,2 +1,12 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="s">
+  <input type="text" model:value="{{value}}"  bindinput="input" placeholder="输入"/>
+  <view class="q" bindtap="qx">取消</view>
+</view>
+
+<view class="ss">
+<view class="sss" wx:for="{{list}}" bindtap="d" data-index="{{index}}">
+  {{item.goods_name}}
+</view>
+  
+</view>

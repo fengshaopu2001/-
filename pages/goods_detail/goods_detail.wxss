@@ -1,1 +1,128 @@
 /* pages/goods_detail/goods_detail.wxss */
+
+.s {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+}
+
+.ss {
+  font-size: 18px;
+}
+
+.sss {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+
+.o {
+  width: 80%;
+  height: 100%;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oo {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.iconfont {
+  font-size: 15px;
+}
+
+.r{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.rr{
+  color: red;
+  font-size: 18px;
+}
+.k{
+  width: 100%;
+  height: 230px;
+}
+
+.m{
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+
+}
+.mm{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.mmm{
+  width: 30%;
+  height: 100%;
+}
+.v{
+  width:100%;
+  height: 50%;
+  display: block;
+}
+.tt{
+  font-size: 15px;
+}
+.button{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: orange;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.button1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: red;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+button{
+  background-color: rgba(0, 0,0, 0.0);
+}
+#cv{
+  background-color: rgba(0, 0,0, 0.0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#cvv{
+  position: absolute;
+  top: 0;
+  left: 45px;
+}

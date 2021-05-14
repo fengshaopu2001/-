@@ -1,6 +1,75 @@
 <!--pages/goods_detail/goods_detail.wxml-->
 <swiper autoplay="true" interval="2000" circular="true" indicator-dots="true">
   <swiper-item wx:for="{{list}}" wx:key='index'>
-    <image src="{{item.pics_big}}"></image>
+    <image src="{{item.pics_big}}" bindtap="d" data-index="{{index}}"></image>
   </swiper-item>
 </swiper>
+<view class="s">
+  <view class="ss">￥{{list1.goods_price}}</view>
+  <view class="sss">
+    <view class="o">
+      {{list1.goods_name}}
+    </view>
+    <view class="oo">
+      <view class="v">
+        <view class="iconfont icon-shoucang" id="q" wx:if="{{f==false}}" bindtap="pp">
+        </view>
+
+        <view class="iconfont icon-shoucang1" id="q" wx:if="{{f==true}}" bindtap="pp">
+        </view>
+        收藏
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<view class="r">
+  <text class="rr">图文详情</text>
+</view>
+
+<view class="k">
+  <rich-text  nodes="{{list1.goods_introduce}}"/>
+</view>
+ 
+<view class="m">
+
+  <view class="mm">
+    <view class="v">
+      <button id="cv" size="mini" open-type="contact"   class="iconfont  icon-lianxi"></button>
+
+   
+      <text class="tt">
+        联系
+      </text>
+    </view>
+  </view>
+  <view class="mm">
+    <view class="v">
+      <button id="cvv" size="mini" class="iconfont icon-fenxiang" open-type="share"></button>
+      <text class="tt">
+        分享
+
+
+      </text>
+    </view>
+  </view>
+  <view class="mm">
+    <view class="v">
+      <text class="iconfont icon-shoppingcart-fill"   bindtap="op"></text>
+      <text class="tt">
+        购物车
+      </text>
+    </view>
+  </view>
+
+  <view class="mmm">
+    <view class="button" bindtap="gwc"  >
+      加入购物车</view>
+  </view>
+  <view class="mmm">
+    <view class="button1">
+      立即购买</view>
+  </view>
+
+</view>

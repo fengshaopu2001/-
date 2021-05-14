@@ -1,2 +1,100 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- //图片 -->
+<view class="o">
+  <view class="s">
+    <image
+      src="https://s.cn.bing.net/th?id=ODL.8acd6796e431785e9623a48ef791095b&w=146&h=146&c=7&rs=1&qlt=80&dpr=1.3&pid=RichNav">
+    </image>
+  </view>
+  <!-- //图片 -->
+  <!-- //历史浏览 -->
+  <view class="ss">
+    <view class="q">
+      <view class="qq">
+        <i id="qf" class="iconfont  icon-31shoucangdedianpu"></i>
+      </view>
+      <view class="qq">收藏的店铺(0)</view>
+    </view>
+    <view class="q">
+      <view class="qq">
+        <i id="qf" class="iconfont icon-wode-shoucangdeshangpin"></i>
+      </view>
+      <view class="qq" bindtap="sc">收藏的商品({{pp.length}})</view>
+    </view>
+    <view class="q">
+      <view class="qq">
+        <view id="qf" class="iconfont icon-fensiguanzhudeshangpin"></view>
+      </view>
+      <view class="qq">关注的商品(0)</view>
+    </view>
+    <view class="q">
+      <view class="qq">
+        <view id="qf" class="iconfont  icon-wodezuji"></view>
+      </view>
+      <view class="qq">我的足迹(0)</view>
+    </view>
+  </view>
+  <!-- //历史浏览 -->
+
+  <!-- //订单 -->
+  <view class="r">
+    <view class="rr">
+      <view class="e">我的订单</view>
+      <view class="sss">
+        <view class="q">
+          <view class="qq">
+            <view id="qf" class="iconfont icon-dingwei-"></view>
+          </view>
+          <view class="qq">全部订单</view>
+        </view>
+        <view class="q">
+          <view class="qq">
+            <view id="qf" class="iconfont icon-daifukuan"></view>
+          </view>
+          <view class="qq">代付款</view>
+        </view>
+        <view class="q">
+          <view class="qq">
+            <view id="qf" class="iconfont icon-daishouhuo"></view>
+          </view>
+          <view class="qq">待收货</view>
+        </view>
+        <view class="q">
+          <view class="qq">
+            <view id="qf" class="iconfont icon-tuikuantuihuo"></view>
+          </view>
+          <view class="qq">退款/退货</view>
+        </view>
+      </view>
+      <!-- //订单 -->
+      <view class="sh">
+        收货地址管理 <view>
+          <view class="iconfont icon-youbianjiantou"></view>
+        </view>
+      </view>
+
+      <view class="shhh">
+        联系客服 <view> 400-618-4000 </view>
+      </view>
+      <view class="shh" bindtap="t">
+        意见反馈 <view>
+          <view class="iconfont icon-youbianjiantou"></view>
+        </view>
+      </view>
+      <view class="shh">
+        关于我们 <view>
+          <view class="iconfont icon-youbianjiantou"></view>
+        </view>
+      </view>
+
+      <view class="vb">
+        <navigator>推荐给其他人</navigator>
+        <view>
+          <view class="iconfont icon-youbianjiantou"></view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+</view>

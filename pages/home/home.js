@@ -26,19 +26,9 @@ wx.switchTab({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-            //  wx.request({
-            //    url:'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata',
-            //    data:{},
-            //    method:"get",
-            //    success:((res)=>{
-            //       console.log(res);
-            //       var a=res.data.message
-            //       console.log(a);
-            //       this.setData({
-            //         img:a
-            //       })
-            //    })
-            //  })
+       wx.showLoading({
+         title: '加载中',
+       })
             app.http.gg().then((res)=>{
               console.log(res);
               var a=res.data.message
@@ -54,6 +44,7 @@ wx.switchTab({
               })
             })
             app.http.h().then((res)=>{
+              wx.hideLoading()
               console.log(res);
               var c=res.data.message
               this.setData({

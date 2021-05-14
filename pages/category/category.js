@@ -24,12 +24,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: '分类加载',
+    })
     app.http.fl().then((res) => {
       console.log(res);
       var a = res.data.message
       console.log(a);
 
       var b = a[0].children
+      wx.hideLoading()
       console.log(b);
       this.setData({
         ffl: a,
@@ -57,6 +61,11 @@ Page({
   onReady: function () {
     // console.log(this.data.ffl);
   },
+ ddd(){
+          wx.navigateTo({
+            url: '/pages/search/search',
+          })
+ },
 
   /**
    * 生命周期函数--监听页面显示

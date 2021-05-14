@@ -5,7 +5,7 @@ module.exports=(url,data,methods)=>{
      data:data,
      method:methods,
      success(res){
-       reslove (res)
+       reslove (res) 
      },
      fail(ees){
        reject (ees)

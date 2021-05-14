@@ -1,18 +1,30 @@
 // pages/user/user.js
+var app = new getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    pp: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var pp = wx.getStorageSync('pp')
+    this.setData({
+      pp: pp
+    })
+    app.http.user().then((res) => {
+      console.log(res);
+    })
+  },
+  sc() {
+    wx.navigateTo({
+      url: '/pages/collect/collect',
+    })
   },
 
   /**
@@ -21,7 +33,11 @@ Page({
   onReady: function () {
 
   },
-
+  t() {
+    wx.navigateTo({
+      url: '/pages/feedback/feedback',
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

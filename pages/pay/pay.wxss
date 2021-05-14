@@ -1,1 +1,119 @@
 /* pages/pay/pay.wxss */
+.s {
+  width: 100%;
+  height: 60px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.ss {
+  width: 100%;
+}
+
+.q {
+  width: 100%;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 23px;
+}
+
+.qq {
+  width: 100%;
+  height: 100%;
+}
+
+.t {
+  width: 100%;
+  height: 90px;
+  display: flex;
+}
+
+.tt {
+  width: 40%;
+  height: 100%;
+}
+
+.ttt {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.y {
+  width: 100%;
+  height: 50%;
+  font-size: 12px;
+}
+
+.yy {
+  width: 100%;
+  height: 50%;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.dd {
+  width: 30%;
+  height: 100%;
+}
+
+.ddd {
+  width: 70%;
+  height: 100%;
+display: flex;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.z {
+  color: red;
+  font-size: 18px;
+}
+.u{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.uu{
+  width: 100%;
+  height: 50%;
+
+}
+.uuu{
+  width: 100%;
+  height: 50%;
+display: flex;
+justify-content: flex-end;
+}
+.pp{
+  width: 40%;
+  height: 100%;
+}
+navigator{
+  background: red;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

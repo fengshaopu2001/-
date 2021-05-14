@@ -1,2 +1,58 @@
-<!--pages/feedback/feedback.wxml-->
-<text>pages/feedback/feedback.wxml</text>
+ <view class="t">
+<view class="s">
+  <view class="ss" id="{{index===index1?'active':''}}" wx:for="{{i}}" data-index="{{index}}"  bindtap="tt">{{item}}</view>    
+</view>
+
+<view class="z" wx:if="{{index1==0}}">
+<view class="zz">问题的种类</view>
+<view class="zzz ">
+  <view class="zzzz">
+    <view class="r">功能建议</view>
+    <view class="r">购买问题</view>
+    <view class="r">性能问题</view>
+    <view class="r">其他</view>
+  </view>
+</view>
+</view>
+
+<view wx:if="{{index1==1}}">
+<view>想投诉我嘛啊</view>
+<image src="https://img02.sogoucdn.com/v2/thumb/crop/xy/ai/x/0/y/0/w/120/h/80/iw/90/ih/60/t/0/ir/3?t=2&appid=200997&url=https%3A%2F%2Fi.keaitupian.net%2Fuploads%2Fallimg%2F160707%2F0U632GG-0.jpg&referer=http%3A%2F%2Fwww.keaitupian.net%2Farticle%2F509.html&sign=4f1ad3b58e69fd344e6d03f80235d9d6"></image>
+</view>
+
+
+<view class="e" wx:if="{{index1==0}}">
+  <view class="ee">
+    <textarea name="" id="" cols="30" rows="10" placeholder="请描述一下问题"></textarea>
+    <view class="eee">
+      <button size="mini" bindtap="xq">
+        <i class="iconfont icon-tupian"></i>
+      </button>
+      <image class="img" wx:for="{{img}}" src="{{item}}"></image>
+    </view>
+    <view class="a">
+      <navigator>提交</navigator>
+    </view>
+  </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

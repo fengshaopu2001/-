@@ -18,7 +18,8 @@
 .ss {
   width: 100%;
   height: 30px;
-  border: 1px solid gray;
+  
+  font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +30,7 @@
 #active {
   border-left: 2px solid red;
   color: red;
-  background: #fff;
+  background: #ccc;
 }
 
 /* .g{

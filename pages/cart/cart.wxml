@@ -1,2 +1,49 @@
 <!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<view class="s">
+  <button bindtap="qq" wx:if="{{!address.cityName}}">+添加收货地址</button>
+  <view>  {{address.cityName}}{{address.cityName}} {{address.countyName}}</view>
+</view>
+<view class="ss">
+  <view class="sss">
+    优购生活馆
+  </view>
+  <view class="q"  wx:for="{{list}}">
+    <view class="qq">
+      <!-- <input type="checkbox" /> -->
+      <checkbox  checked="{{item.che}}" bindtouchend="kk" data-index="{{index}}"></checkbox>
+    </view>
+    <view class="qqq">
+      <view class="r" >
+        <image src="{{item.goods_big_logo}}" alt="" />
+
+      </view>
+      <view class='op' >
+        <view class="rr" >
+          {{item.goods_name}}
+        </view>
+        <view class="rr">
+          <button class="button" size="mini" bindtap="jian" data-index="{{index}}" wx:if="{{item.num>1}}">-</button>
+          <button wx:if="{{item.num<=1}}" disabled class="button" size="mini" bindtap="jian" data-index="{{index}}">-</button>
+          <input type="text" model:value="{{item.num}}" />
+          <button class="button" size="mini" bindtap="jia" data-index="{{index}}">+</button>
+        </view>
+      </view>
+   
+    </view>
+  </view>
+
+</view>
+
+
+<view class="b">
+  <view class="bb">
+    <checkbox checked="{{che1}}" bindtap="qx"></checkbox> 全选
+  </view>
+  <view class="bb"></view>
+  <view class="bb">
+    合计：<text class="h">￥{{num}}</text>
+  </view>
+  <view class="bb">
+    <navigator bindtap="jiesuan">结算({{num1}})</navigator>
+  </view>
+</view>
